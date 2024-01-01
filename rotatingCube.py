@@ -10,3 +10,7 @@ def cube():
         for vertex in edge:
             glVertex3fv(verticies[vertex])
     glEnd()
+def main():
+    pygame.init()
+    display = (800,600)
+    pygame.display.set_mode(display,DOUBLEBUF|OPENGL)
